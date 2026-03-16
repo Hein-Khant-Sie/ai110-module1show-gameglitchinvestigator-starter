@@ -25,13 +25,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [The purpose of the game is to let the player guess a secret number within a selected range while receiving hints about whether the guess is too high or too low. ] Describe the game's purpose.
+- [ I found that the hints were backwards, the secret number changed because of Streamlit reruns, and the New Game button did not properly reset the game state.] Detail which bugs you found.
+- [ I fixed the hint logic so the messages matched the guesses correctly. I made the secret number stable by storing it in st.session_state and only creating it once with a guard condition. I also fixed the New Game button by resetting the game status so a new round could start normally. In addition, I moved game logic into logic_utils.py to separate the logic from the Streamlit UI.] Explain what fixes you applied.
 
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+- [game_demo.png ] [Insert a screenshot of your fixed, winning game here]
 
 ## 🚀 Stretch Features
 
